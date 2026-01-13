@@ -1,0 +1,112 @@
+[project]
+name = "hass-__integration_name__"
+version = "0.1.0"
+description = "A Home Assistant integration for __INTEGRATION_DESCRIPTION__"
+readme = "README.md"
+requires-python = ">=3.13.2"
+authors = [
+    { name = "lnagel", email = "lnagel@users.noreply.github.com" }
+]
+dependencies = [
+    "colorlog>=6.10.1",
+    "homeassistant>=2025.10.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.20.0",
+    "pytest-cov>=4.0.0",
+    "pytest-homeassistant-custom-component>=0.13.285",
+]
+dev = [
+    "hass-__integration_name__[test]",
+    "bump-my-version>=1.1.0",
+    "ruff>=0.14.10",
+    "ty>=0.0.1a11",
+]
+
+[project.urls]
+Documentation = "https://github.com/lnagel/hass-__integration_name__"
+Repository = "https://github.com/lnagel/hass-__integration_name__"
+Issues = "https://github.com/lnagel/hass-__integration_name__/issues"
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = "."
+asyncio_mode = "auto"
+testpaths = ["tests"]
+norecursedirs = [".git", "testing_config"]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
+    "D203", # no-blank-line-before-class (incompatible with formatter)
+    "D212", # multi-line-summary-first-line (incompatible with formatter)
+    "COM812", # incompatible with formatter
+    "ISC001", # incompatible with formatter
+]
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.ruff.lint.mccabe]
+max-complexity = 25
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = [
+    "S101", # Allow assert in tests
+    "S106", # Allow hardcoded passwords in tests
+    "ARG001", # Allow unused arguments in fixtures
+    "PLR2004", # Allow magic values in tests
+    "SLF001", # Allow private member access in tests
+    "EM101", # Allow string literals in exceptions
+    "TRY003", # Allow long exception messages
+]
+
+[tool.coverage.run]
+source = ["custom_components/__integration_name__"]
+branch = true
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+fail_under = 85
+show_missing = true
+
+[tool.ty.environment]
+python-version = "3.13"
+
+[tool.bumpversion]
+current_version = "0.1.0"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+commit = true
+tag = true
+tag_name = "v{new_version}"
+pre_commit_hooks = ["uv lock && git add uv.lock"]
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "custom_components/__integration_name__/manifest.json"
+search = '"version": "{current_version}"'
+replace = '"version": "{new_version}"'

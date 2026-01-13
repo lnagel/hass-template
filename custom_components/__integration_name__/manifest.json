@@ -1,0 +1,11 @@
+{
+    "domain": "__integration_name__",
+    "name": "__INTEGRATION_NAME__",
+    "codeowners": ["@lnagel"],
+    "config_flow": true,
+    "documentation": "https://github.com/lnagel/hass-__integration_name__",
+    "integration_type": "device",
+    "iot_class": "local_polling",
+    "issue_tracker": "https://github.com/lnagel/hass-__integration_name__/issues",
+    "version": "0.1.0"
+}
