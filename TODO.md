@@ -13,7 +13,7 @@ After creating a new project from this template:
 - [ ] Update `manifest.json` with your integration details
 - [ ] Set up Codecov token in GitHub repository secrets
 - [ ] Create initial tests
-- [ ] Run `uv sync --all-extras` and verify all checks pass
+- [ ] Run `uv sync --dev` and verify all checks pass
 
 ## Outstanding Tasks
 
