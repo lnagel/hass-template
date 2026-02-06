@@ -61,7 +61,16 @@ custom_components/__integration_name__/
 └── manifest.json        # Integration manifest
 
 tests/                   # Test suite
+
+docs/                    # Documentation
+└── index.md             # Documentation index
 ```
+
+## Documentation Synchronization
+
+The `docs/` directory contains design documents and specifications.
+
+When making changes, ensure the documentation stays in sync with the implementation.
 
 ## Testing Requirements
 
@@ -133,7 +142,15 @@ uv run pytest && uv run ruff format . && uv run ruff check . --fix && uv run ty 
 git commit
 ```
 
-### 3. Fixing Bugs Without Tests
+### 3. Not Updating Documentation
+```python
+# WRONG - Added new entity without documenting
+# (creates silent drift between docs and code)
+
+# RIGHT - Update docs/ with new entity details
+```
+
+### 4. Fixing Bugs Without Tests
 ```python
 # WRONG - Just fix the code
 def some_function(...):
@@ -145,7 +162,7 @@ def test_some_function_edge_case():
     assert some_function(edge_case) == expected
 ```
 
-### 4. Floating-Point Equality in Tests
+### 5. Floating-Point Equality in Tests
 Use `pytest.approx()` for asserting float values that have passed through
 any computation (division, interpolation, averaging). Direct assign-and-read
 without computation can use `==`. Dictionary comparisons with nested floats
