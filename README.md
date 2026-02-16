@@ -2,7 +2,7 @@
 
 [![GitHub Release](https://img.shields.io/github/v/release/lnagel/hass-__integration_name__?style=flat-square)](https://github.com/lnagel/hass-__integration_name__/releases)
 [![License](https://img.shields.io/github/license/lnagel/hass-__integration_name__?style=flat-square)](LICENSE)
-[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=flat-square)](https://hacs.xyz/)
+[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
 [![CI](https://img.shields.io/github/actions/workflow/status/lnagel/hass-__integration_name__/checks.yml?branch=main&style=flat-square&label=tests)](https://github.com/lnagel/hass-__integration_name__/actions)
 [![codecov](https://codecov.io/gh/lnagel/hass-__integration_name__/branch/main/graph/badge.svg)](https://codecov.io/gh/lnagel/hass-__integration_name__)
 
@@ -19,6 +19,8 @@ A Home Assistant custom integration for __INTEGRATION_DESCRIPTION__.
 - Home Assistant 2025.10 or newer
 
 ## Installation
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
 
 ### HACS (Recommended)
 
