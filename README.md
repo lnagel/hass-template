@@ -1,9 +1,9 @@
 # __INTEGRATION_NAME__
 
-[![GitHub Release](https://img.shields.io/github/v/release/lnagel/hass-__integration_name__?style=flat-square)](https://github.com/lnagel/hass-__integration_name__/releases)
-[![License](https://img.shields.io/github/license/lnagel/hass-__integration_name__?style=flat-square)](https://github.com/lnagel/hass-__integration_name__/blob/main/LICENSE)
-[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
-[![CI](https://img.shields.io/github/actions/workflow/status/lnagel/hass-__integration_name__/checks.yml?branch=main&style=flat-square&label=tests)](https://github.com/lnagel/hass-__integration_name__/actions)
+[![GitHub Release](https://img.shields.io/github/v/release/lnagel/hass-__integration_name__)](https://github.com/lnagel/hass-__integration_name__/releases)
+[![License](https://img.shields.io/github/license/lnagel/hass-__integration_name__)](https://github.com/lnagel/hass-__integration_name__/blob/main/LICENSE)
+[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
+[![CI](https://img.shields.io/github/actions/workflow/status/lnagel/hass-__integration_name__/checks.yml?branch=main&label=tests)](https://github.com/lnagel/hass-__integration_name__/actions)
 [![codecov](https://codecov.io/gh/lnagel/hass-__integration_name__/branch/main/graph/badge.svg)](https://codecov.io/gh/lnagel/hass-__integration_name__)
 
 A Home Assistant custom integration for __INTEGRATION_DESCRIPTION__.
