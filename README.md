@@ -16,7 +16,7 @@ A Home Assistant custom integration for __INTEGRATION_DESCRIPTION__.
 
 ## Requirements
 
-- Home Assistant 2025.10 or newer
+- Home Assistant 2026.3 or newer
 
 ## Installation
 
