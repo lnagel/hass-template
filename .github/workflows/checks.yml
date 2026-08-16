@@ -38,7 +38,7 @@ jobs:
         run: uv run pytest --cov=custom_components/__integration_name__ --cov-branch --cov-report=xml --cov-report=term --junitxml=junit.xml -o junit_family=legacy
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v6
+        uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
