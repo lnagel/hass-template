@@ -76,7 +76,7 @@ When fixing bugs:
 To check coverage locally, including which of your changed lines are not covered:
 
 ```bash
-uv run pytest --cov --cov-report=xml
+uv run pytest --cov --cov-branch --cov-report=term --cov-report=xml
 uv run diff-cover coverage.xml --compare-branch=main
 ```
 
