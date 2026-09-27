@@ -9,7 +9,7 @@ Contributing to this project should be as easy and transparent as possible, whet
 
 ## GitHub is used for everything
 
-GitHub is used to host code, to track issues and feature requests, as well as accept pull requests.
+GitHub is used to host code, to track bugs in issues, to discuss feature requests in discussions, as well as accept pull requests.
 
 Pull requests are the best way to propose changes to the codebase, but please read [Scope of contributions](#scope-of-contributions) first.
 
@@ -113,9 +113,11 @@ Bug reports must come from a real installation: logs, diagnostics and reproducti
 ## Report bugs using GitHub's [issues](../../issues)
 
 GitHub issues are used to track public bugs.
-Report a bug by [opening a new issue](../../issues/new/choose); it's that easy!
+Report a bug by [opening a new issue](../../issues/new/choose) using the **Bug report** template.
 
-**Great bug reports** tend to have:
+**Bug reports must follow the template.** Fill in every required field, including System Health details, reproduction steps and debug logs, and attach diagnostics where possible. Bug reports that do not follow the template may be closed.
+
+Beyond the template, **great bug reports** tend to have:
 
 - A quick summary and/or background
 - Steps to reproduce
@@ -126,6 +128,13 @@ Report a bug by [opening a new issue](../../issues/new/choose); it's that easy!
 - Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
 
 People *love* thorough bug reports. I'm not even kidding.
+
+## Request features using GitHub's [discussions](../../discussions)
+
+Feature requests and ideas are preferably discussed in GitHub Discussions.
+Start a [new discussion](../../discussions/new/choose) describing the problem you are trying to solve, not only the solution you have in mind.
+Feature requests opened as issues may be converted into a discussion.
+If the maintainer agrees on the approach, it can then be implemented in a pull request.
 
 ## License
 
