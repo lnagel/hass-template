@@ -76,7 +76,7 @@ When fixing bugs:
 To check coverage locally, including which of your changed lines are not covered:
 
 ```bash
-uv run pytest --cov=custom_components/__integration_name__ --cov-branch --cov-report=xml
+uv run pytest --cov --cov-report=xml
 uv run diff-cover coverage.xml --compare-branch=main
 ```
 
@@ -126,10 +126,6 @@ Report a bug by [opening a new issue](../../issues/new/choose); it's that easy!
 - Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
 
 People *love* thorough bug reports. I'm not even kidding.
-
-## Project-specific notes
-
-<!-- Integration-specific guidance goes here (e.g. contributing test fixtures, device data capture). Remove this section if there is nothing to add. -->
 
 ## License
 
