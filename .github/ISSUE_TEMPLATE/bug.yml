@@ -23,6 +23,8 @@ body:
         required: true
       - label: This issue is not a duplicate issue of any previous issues.
         required: true
+      - label: I observed this issue on my own installation, and the logs and diagnostics are real (not AI-generated).
+        required: true
 - type: textarea
   attributes:
     label: "Describe the issue"
