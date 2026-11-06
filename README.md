@@ -2,7 +2,7 @@
 
 [![GitHub Release](https://img.shields.io/github/v/release/lnagel/hass-__integration_name__)](https://github.com/lnagel/hass-__integration_name__/releases)
 [![License](https://img.shields.io/github/license/lnagel/hass-__integration_name__)](https://github.com/lnagel/hass-__integration_name__/blob/main/LICENSE)
-[![HACS](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
+[![Marketplace](https://img.shields.io/badge/Home_Assistant-Marketplace-41BDF5.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
 [![CI](https://img.shields.io/github/actions/workflow/status/lnagel/hass-__integration_name__/checks.yml?branch=main&label=tests)](https://github.com/lnagel/hass-__integration_name__/actions)
 [![codecov](https://codecov.io/gh/lnagel/hass-__integration_name__/branch/main/graph/badge.svg)](https://codecov.io/gh/lnagel/hass-__integration_name__)
 
@@ -20,21 +20,11 @@ A Home Assistant custom integration for __INTEGRATION_DESCRIPTION__.
 
 ## Installation
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
+[![Open your Home Assistant instance and open a repository in the Marketplace.](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=lnagel&repository=hass-__integration_name__&category=integration)
 
-### HACS (Recommended)
-
-1. Open HACS in Home Assistant
-2. Click the three dots menu > **Custom repositories**
-3. Add `https://github.com/lnagel/hass-__integration_name__` with category **Integration**
-4. Search for "__INTEGRATION_NAME__" and install
-5. Restart Home Assistant
-
-### Manual Installation
-
-1. Download the latest release from [GitHub](https://github.com/lnagel/hass-__integration_name__/releases)
-2. Extract and copy `custom_components/__integration_name__` to your `config/custom_components` directory
-3. Restart Home Assistant
+1. Open **Settings > Marketplace** in Home Assistant, or use the button above.
+2. Search for "__INTEGRATION_NAME__" and select **Install**.
+3. Continue with the integration setup when prompted.
 
 ## Configuration
 
