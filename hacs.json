@@ -1,4 +1,6 @@
 {
     "name": "__INTEGRATION_NAME__",
-    "homeassistant": "2026.11.0"
+    "homeassistant": "2026.11.0",
+    "zip_release": true,
+    "filename": "__integration_name__.zip"
 }
